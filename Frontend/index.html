@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AI-ResumeHacker</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title-project">
+                <div class="header-title">
+                    <img class="logo" src="briefcase.png"alt="JobSnap AI Logo" />
+                    <h1 class="header">JobSnap AI</h1>
+                </div>
+                <p class="sub-header">AI-powerd Resume & Cover Letter Generator</p>
+              <form id="resumeForm">
+
+                <label class="Upload-Resume-label" for="resumeInput">Upload Resume</label>
+                <input  type="file" class="Upload-Resume" id="resumeInput" />
+
+                <p class="subtitle">Paste job Description</p>
+                <textarea id="jobDescription" placeholder="Paste job Description Here" rows="8"></textarea>
+
+                
+                <div class="section">
+                    <label for="mode">Mode</label>
+
+                    <select id="mode">
+                        <option class="mode-option" value="Fresher">Fresher</option>
+                        <option class="mode-option" value="Experienced">Experienced</option>
+                    </select>
+
+                    <label for="tone">Tone</label>
+                    <select id="tone">
+                       <option class="tone-option" value="Friendly">Friendly</option>
+                       <option class="tone-option" value="Formal">Formal</option>
+                       <option class="tone-option" value="Funny">Funny</option>
+                       <option class="tone-option" value="Motivational">Motivational</option>
+                       <option class="tone-option" value="Professional">Professional</option>                        
+                    </select>
+                </div>
+
+                <button type="submit">✨ Generate My Documents</button>
+              </form>
+              <div id="result"></div>
+
+            </div>
+        </div>
+      <script src="script.js"></script>
+    </body>
+</html>
